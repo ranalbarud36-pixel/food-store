@@ -1,0 +1,75 @@
+/* פונט מודרני לעברית */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap');
+
+html, body {
+    font-family: 'Heebo', sans-serif;
+    height: 100%;
+}
+
+/* עיצוב התפריט העליון שקוף למחצה */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+}
+
+/* תמונת הרקע הראשית */
+.hero-header {
+    /* תמונה של המבורגר/אוכל כהה ואיכותי */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* תופס את כל הגובה של המסך */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* אייקונים בצבע כתום */
+.icon-box {
+    font-size: 3.5rem;
+    color: #ffc107; /* צבע צהוב-כתום */
+}
+
+/* אפקט ריחוף על הכרטיסים */
+.hover-card {
+    transition: transform 0.3s ease;
+}
+
+    .hover-card:hover {
+        transform: translateY(-10px); /* הכרטיס עולה למעלה כשעוברים עליו */
+    }
+/* --- עיצוב דפי כניסה והרשמה --- */
+
+.auth-bg {
+    /* תמונת רקע כהה ואיכותית של מסעדה/תבלינים */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-card {
+    background: rgba(255, 255, 255, 0.95); /* רקע לבן כמעט אטום */
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    overflow: hidden;
+    width: 100%;
+    max-width: 450px; /* רוחב מקסימלי לטופס */
+    padding: 2rem;
+}
+
+.form-control-lg {
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+}
+
+    .form-control-lg:focus {
+        background-color: #fff;
+        box-shadow: 0 0 0 4px rgba(255, 193, 7, 0.25); /* צהוב בעת לחיצה */
+        border-color: #ffc107;
+    }
